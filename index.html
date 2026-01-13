@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE Cosmetology | Элитная косметология в Москве</title>
+    <meta name="description" content="Элитная косметология в Москве. Современные процедуры, сертифицированные специалисты, индивидуальный подход.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <span class="logo-text">LUXE</span>
+                    <span class="logo-subtext">COSMETOLOGY</span>
+                </div>
+                
+                <div class="nav-links" id="navLinks">
+                    <a href="#home" class="nav-link active">Главная</a>
+                    <a href="#services" class="nav-link">Услуги</a>
+                    <a href="#about" class="nav-link">О нас</a>
+                    <a href="#specialists" class="nav-link">Специалисты</a>
+                    <a href="#testimonials" class="nav-link">Отзывы</a>
+                    <a href="#contact" class="nav-link">Контакты</a>
+                </div>
+                
+                <div class="nav-actions">
+                    <div class="phone">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (999) 123-45-67</span>
+                    </div>
+                    <button class="btn btn-primary" id="bookBtn">
+                        <i class="fas fa-calendar-check"></i>
+                        Записаться
+                    </button>
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-sparkles"></i>
+                    <span>Эксперты в косметологии с 2009 года</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="text-primary">Естественная</span> красота<br>
+                    начинается здесь
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Инновационные косметологические процедуры, индивидуальный подход<br>
+                    и современные технологии для вашего совершенства
+                </p>
+                
+                <div class="hero-actions">
+                    <button class="btn btn-lg btn-primary" id="consultBtn">
+                        <span>Бесплатная консультация</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-lg btn-outline" id="watchVideo">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Смотреть видео</span>
+                    </button>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Лет опыта</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">5,000+</div>
+                        <div class="stat-label">Довольных клиентов</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">120+</div>
+                        <div class="stat-label">Видов процедур</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Успешных результатов</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <div class="floating-badge">
+                        <i class="fas fa-award"></i>
+                        <div>
+                            <span class="badge-title">Лучшая клиника 2023</span>
+                            <span class="badge-subtitle">по версии Beauty Awards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Наши услуги</span>
+                <h2 class="section-title">Совершенство в каждой детали</h2>
+                <p class="section-subtitle">Мы предлагаем полный спектр косметологических услуг для лица и тела</p>
+            </div>
+            
+            <div class="services-grid" id="servicesContainer">
+                <!-- Services will be loaded dynamically -->
+            </div>
+            
+            <div class="text-center mt-50">
+                <button class="btn btn-secondary" id="viewAllServices">
+                    <span>Смотреть все услуги</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-label">О нас</span>
+                    <h2 class="section-title">Почему выбирают LUXE Cosmetology</h2>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Сертифицированные специалисты</h3>
+                                <p>Наши врачи имеют международные сертификаты и регулярно проходят обучение</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Безопасность и качество</h3>
+                                <p>Используем только оригинальные препараты и стерильное оборудование</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Индивидуальный подход</h3>
+                                <p>Для каждого клиента разрабатываем персональную программу ухода</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Результат, который радует</h3>
+                                <p>98% клиентов отмечают видимый результат после первой процедуры</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-actions">
+                        <button class="btn btn-primary" id="learnMore">
+                            <span>Узнать больше о нас</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="experience-badge">
+                            <span class="years">15</span>
+                            <span class="label">лет совершенства</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialists Section -->
+    <section class="specialists" id="specialists">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Наша команда</span>
+                <h2 class="section-title">Встречайте наших экспертов</h2>
+                <p class="section-subtitle">Профессионалы с медицинским образованием и многолетним опытом</p>
+            </div>
+            
+            <div class="specialists-grid" id="specialistsContainer">
+                <!-- Specialists will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Отзывы</span>
+                <h2 class="section-title">Истории наших клиентов</h2>
+                <p class="section-subtitle">Более 5000 довольных клиентов доверили нам свою красоту</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <button class="slider-btn prev" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="testimonials-container">
+                    <div class="testimonials-track" id="testimonialsTrack">
+                        <!-- Testimonials will be loaded dynamically -->
+                    </div>
+                </div>
+                
+                <button class="slider-btn next" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <div class="slider-dots" id="sliderDots"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="section-header">
+                        <span class="section-label">Контакты</span>
+                        <h2 class="section-title">Запишитесь на консультацию</h2>
+                        <p class="section-subtitle">Мы поможем подобрать оптимальную процедуру для вас</p>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Адрес</h3>
+                                <p>г. Москва, ул. Тверская, 25</p>
+                                <p>м. Тверская, 5 минут пешком</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Телефон</h3>
+                                <p>+7 (999) 123-45-67</p>
+                                <p>+7 (495) 765-43-21</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p>info@luxe-cosmetology.ru</p>
+                                <p>booking@luxe-cosmetology.ru</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Часы работы</h3>
+                                <p>Пн-Пт: 9:00 - 21:00</p>
+                                <p>Сб-Вс: 10:00 - 19:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="VKontakte">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="bookingForm">
+                        <h3>Записаться онлайн</h3>
+                        
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                            <div class="error-message" id="nameError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                            <div class="error-message" id="phoneError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="serviceType" name="serviceType" required>
+                                <option value="">Выберите услугу</option>
+                                <option value="consultation">Консультация</option>
+                                <option value="facial">Уход за лицом</option>
+                                <option value="injections">Инъекции</option>
+                                <option value="hardware">Аппаратные процедуры</option>
+                                <option value="body">Коррекция тела</option>
+                            </select>
+                            <div class="error-message" id="serviceError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Ваши пожелания или вопросы" rows="4"></textarea>
+                            <div class="error-message" id="messageError"></div>
+                        </div>
+                        
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">
+                                Я согласен(а) на обработку персональных данных
+                            </label>
+                            <div class="error-message" id="privacyError"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block" id="submitForm">
+                            <span>Отправить заявку</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        
+                        <div class="form-success" id="successMessage">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Спасибо! Мы свяжемся с вами в течение 30 минут</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <span class="logo-text">LUXE</span>
+                        <span class="logo-subtext">COSMETOLOGY</span>
+                    </div>
+                    <p class="footer-description">
+                        Элитная косметология с 2009 года. Современные технологии, 
+                        безопасные процедуры и индивидуальный подход к каждому клиенту.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Услуги</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Эстетическая косметология</a></li>
+                        <li><a href="#services">Аппаратные процедуры</a></li>
+                        <li><a href="#services">Инъекционные методики</a></li>
+                        <li><a href="#services">Уход за кожей</a></li>
+                        <li><a href="#services">Коррекция фигуры</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Клиника</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#specialists">Специалисты</a></li>
+                        <li><a href="#testimonials">Отзывы</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                        <li><a href="#" id="priceBtn">Цены</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Контакты</h3>
+                    <ul class="footer-contacts">
+                        <li><i class="fas fa-map-marker-alt"></i> Москва, Тверская, 25</li>
+                        <li><i class="fas fa-phone"></i> +7 (999) 123-45-67</li>
+                        <li><i class="fas fa-envelope"></i> info@luxe-cosmetology.ru</li>
+                        <li><i class="fas fa-clock"></i> Пн-Вс: 9:00 - 21:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 LUXE Cosmetology. Все права защищены.</p>
+                <p class="made-with">
+                    Создано с <i class="fas fa-heart"></i> для вашей красоты
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Запись на прием</h3>
+                <button class="modal-close" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Выберите удобный способ связи:</p>
+                <div class="modal-actions">
+                    <button class="btn btn-primary" id="callBtn">
+                        <i class="fas fa-phone"></i>
+                        Позвонить сейчас
+                    </button>
+                    <button class="btn btn-outline" id="whatsappBtn">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
+                    </button>
+                    <button class="btn btn-outline" id="telegramBtn">
+                        <i class="fab fa-telegram"></i>
+                        Telegram
+                    </button>
+                </div>
+                <div class="modal-note">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Или заполните форму ниже</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner">
+            <div class="spinner-circle"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
